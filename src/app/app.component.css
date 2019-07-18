@@ -1,0 +1,38 @@
+.body{
+    margin-top: 56px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background:black;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navbar-title{
+    font-size: 1.25rem;
+    padding-top: .3125rem;
+    color: white;
+
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+}
+.navbar-content{
+    font-size: 1rem;
+    padding-top: .3125rem;
+    color: white;
+
+    text-decoration: none;
+}

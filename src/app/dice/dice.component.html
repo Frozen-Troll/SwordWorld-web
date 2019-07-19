@@ -1,7 +1,8 @@
 <div class="body">
     <p>dice works!</p>
-    <button class="dice-button" (click)="getNextDice()">掷骰</button>
-    <p>结果为{{rand}}</p>
-    <img class="dice-img" [src]="diceUrl1"/>
-    <img class="dice-img" [src]="diceUrl2"/>
+    <button class="dice-button" (click)="roll1D6()">1D6</button>
+    <button class="dice-button" (click)="roll2D6()">2D6</button>
+    <p *ngIf="dice1_on">结果为{{sum}}</p>
+    <img *ngIf="dice1_on" class="dice-img" [src]="diceUrl1"/>
+    <img *ngIf="dice2_on" class="dice-img" [src]="diceUrl2"/>
 </div>
